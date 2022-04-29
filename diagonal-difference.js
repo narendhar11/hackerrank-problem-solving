@@ -8,18 +8,18 @@ const arr = [
 
 The left-to-right diagonal = 1+5+9 = 15. The right to left diagonal = 3+5+9 = 17. Their absolute difference is |15-17| = 2.
 
-leftDiagonal = 0;
-rightDiagonal = 0
-for(i=0; i<arr.length; i++){
-    for(j=0; j<arr.length; j++){
+var leftDiagonal = 0;
+var rightDiagonal = 0
+for(let i=0; i<arr.length; i++){
+    for(let j=0; j<arr.length; j++){
         if(i === j){
         leftDiagonal += arr[i][j]);
         }
     }
 }
 
-for(i=0; i<arr.length; i++){
-    for(j=0; j<arr.length; j++){
+for(let i=0; i<arr.length; i++){
+    for(let j=0; j<arr.length; j++){
         if((i+j) === (arr.length - 1)){
         rightDiagonal += arr[i][j]);
         }
